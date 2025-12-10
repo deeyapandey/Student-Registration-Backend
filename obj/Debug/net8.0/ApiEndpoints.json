@@ -1,0 +1,745 @@
+[
+  {
+    "ContainingType": "StudentRegistrationAPI.Controllers.BloodGroupController",
+    "Method": "GetBloodGroup",
+    "RelativePath": "api/BloodGroup",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentRegistrationAPI.Controllers.BloodGroupController",
+    "Method": "AddBloodGroup",
+    "RelativePath": "api/BloodGroup",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bloodGroup",
+        "Type": "StudentRegistrationAPI.Models.BloodGroup",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentRegistrationAPI.Controllers.DisabilityStatusController",
+    "Method": "GetAll",
+    "RelativePath": "api/DisabilityStatus",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentRegistrationAPI.Controllers.LocationController",
+    "Method": "GetDistrictsByProvince",
+    "RelativePath": "api/Location/districts/by-province/{provinceId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "provinceId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[StudentRegistrationAPI.DTOs.DistrictDto, StudentRegistrationAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StudentRegistrationAPI.Controllers.LocationController",
+    "Method": "GetMunicipalitiesByDistrict",
+    "RelativePath": "api/Location/municipalities/by-district/{districtId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "districtId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[StudentRegistrationAPI.DTOs.MunicipalityDto, StudentRegistrationAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StudentRegistrationAPI.Controllers.LocationController",
+    "Method": "GetProvinces",
+    "RelativePath": "api/Location/provinces",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[StudentRegistrationAPI.DTOs.ProvinceDto, StudentRegistrationAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StudentRegistrationAPI.Controllers.MaritalStatusController",
+    "Method": "GetAll",
+    "RelativePath": "api/MaritalStatus",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentRegistrationAPI.Controllers.NationalityController",
+    "Method": "GetNationalities",
+    "RelativePath": "api/Nationality",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentRegistrationAPI.Controllers.NationalityController",
+    "Method": "AddNationality",
+    "RelativePath": "api/Nationality",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nationality",
+        "Type": "StudentRegistrationAPI.Models.Nationality",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentRegistrationAPI.Controllers.RegistrationController",
+    "Method": "GetStudent",
+    "RelativePath": "api/Registration/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentRegistrationAPI.Controllers.RegistrationController",
+    "Method": "DeleteStudent",
+    "RelativePath": "api/Registration/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentRegistrationAPI.Controllers.RegistrationController",
+    "Method": "Register",
+    "RelativePath": "api/Registration/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FirstName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MiddleName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "LastName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DateOfBirth",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "PlaceOfBirth",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NationalityId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "CitizenshipNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CitizenshipIssueDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "CitizenshipIssueDistrict",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AlternateEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PrimaryMobile",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SecondaryMobile",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmergencyContactName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmergencyContactRelation",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmergencyContactNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Gender",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "BloodGroupId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "MaritalStatusId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Religion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EthnicityCaste",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DisabilityStatusId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "DisabilityTypeSpecify",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DisabilityPercentage",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "AnnualFamilyIncome",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ResidenceType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TransportationMethod",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ExtracurricularInterests",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DeclarationAccepted",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Place",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Addresses",
+        "Type": "System.Collections.Generic.List\u00601[[StudentRegistrationAPI.DTOs.AddressDto, StudentRegistrationAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Parents",
+        "Type": "System.Collections.Generic.List\u00601[[StudentRegistrationAPI.DTOs.ParentDto, StudentRegistrationAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Enrollment.Faculty",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Enrollment.Program",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Enrollment.CourseLevel",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Enrollment.AcademicYear",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Enrollment.SemesterClass",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Enrollment.Section",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Enrollment.RollNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Enrollment.RegistrationNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Enrollment.EnrollDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "Enrollment.AcademicStatus",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Financial.FeeCategory",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Financial.ScholarshipType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Financial.ScholarshipProvider",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Financial.ScholarshipAmount",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Financial.AccountHolderName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Financial.BankName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Financial.AccountNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Financial.Branch",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PreviousAcademics",
+        "Type": "System.Collections.Generic.List\u00601[[StudentRegistrationAPI.DTOs.AcademicHistoryDto, StudentRegistrationAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Files",
+        "Type": "System.Collections.Generic.List\u00601[[StudentRegistrationAPI.DTOs.FileUploadDto, StudentRegistrationAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Awards",
+        "Type": "System.Collections.Generic.List\u00601[[StudentRegistrationAPI.DTOs.ExtracurricularAwardDto, StudentRegistrationAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentRegistrationAPI.Controllers.RegistrationController",
+    "Method": "GetAllStudents",
+    "RelativePath": "api/Registration/students",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentRegistrationAPI.Controllers.RegistrationController",
+    "Method": "UpdateStudent",
+    "RelativePath": "api/Registration/update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "FirstName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MiddleName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "LastName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DateOfBirth",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "PlaceOfBirth",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NationalityId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "CitizenshipNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CitizenshipIssueDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "CitizenshipIssueDistrict",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AlternateEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PrimaryMobile",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SecondaryMobile",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmergencyContactName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmergencyContactRelation",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmergencyContactNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Gender",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "BloodGroupId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "MaritalStatusId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Religion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EthnicityCaste",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DisabilityStatusId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "DisabilityTypeSpecify",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DisabilityPercentage",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "AnnualFamilyIncome",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ResidenceType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TransportationMethod",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ExtracurricularInterests",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DeclarationAccepted",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Place",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Addresses",
+        "Type": "System.Collections.Generic.List\u00601[[StudentRegistrationAPI.DTOs.AddressDto, StudentRegistrationAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Parents",
+        "Type": "System.Collections.Generic.List\u00601[[StudentRegistrationAPI.DTOs.ParentDto, StudentRegistrationAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Enrollment.Faculty",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Enrollment.Program",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Enrollment.CourseLevel",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Enrollment.AcademicYear",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Enrollment.SemesterClass",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Enrollment.Section",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Enrollment.RollNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Enrollment.RegistrationNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Enrollment.EnrollDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "Enrollment.AcademicStatus",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Financial.FeeCategory",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Financial.ScholarshipType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Financial.ScholarshipProvider",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Financial.ScholarshipAmount",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Financial.AccountHolderName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Financial.BankName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Financial.AccountNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Financial.Branch",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PreviousAcademics",
+        "Type": "System.Collections.Generic.List\u00601[[StudentRegistrationAPI.DTOs.AcademicHistoryDto, StudentRegistrationAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Files",
+        "Type": "System.Collections.Generic.List\u00601[[StudentRegistrationAPI.DTOs.FileUploadDto, StudentRegistrationAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Awards",
+        "Type": "System.Collections.Generic.List\u00601[[StudentRegistrationAPI.DTOs.ExtracurricularAwardDto, StudentRegistrationAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
